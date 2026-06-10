@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anvesa - Campus Talent, Local Impact</title>
+    <meta name="description" content="Anvesa connects college students with local businesses for freelance work, internships, and gigs.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- ====== NAVBAR ====== -->
+    <header id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-icon"><i class="fa-solid fa-graduation-cap"></i></span>
+                <span class="logo-text">Anvesa</span>
+            </a>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#testimonials" class="nav-link">Testimonials</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <a href="#contact" class="btn btn-login">Login</a>
+                <a href="#contact" class="btn btn-register">Register</a>
+                <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ====== HERO ====== -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+            <div class="blob blob-3"></div>
+            <div class="grid-pattern"></div>
+        </div>
+
+        <div class="container hero-container">
+            <div class="hero-content reveal">
+                <span class="badge">
+                    <i class="fa-solid fa-sparkles"></i> New • AI-Powered Student Talent Platform
+                </span>
+                <h1 class="hero-title">
+                    Find Trusted <span class="gradient-text">Student Talent</span> Near You
+                </h1>
+                <p class="hero-subtitle">
+                    Connect with verified college students for design, coding, tutoring, content writing, marketing, video editing, and more.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#services" class="btn btn-primary">
+                        <i class="fa-solid fa-briefcase"></i> Hire Talent
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fa-solid fa-rocket"></i> Start Freelancing
+                    </a>
+                </div>
+                <div class="hero-trust">
+                    <div class="trust-avatars">
+                        <div class="avatar" style="background: linear-gradient(135deg,#2563EB,#10B981);">AR</div>
+                        <div class="avatar" style="background: linear-gradient(135deg,#10B981,#059669);">SM</div>
+                        <div class="avatar" style="background: linear-gradient(135deg,#2563EB,#1d4ed8);">PK</div>
+                        <div class="avatar" style="background: linear-gradient(135deg,#f59e0b,#ef4444);">JD</div>
+                    </div>
+                    <div class="trust-text">
+                        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        <span><strong>15,000+</strong> students &amp; businesses trust Anvesa</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual reveal">
+                <div class="glass-card hero-card-1">
+                    <div class="hc-header">
+                        <div class="hc-avatar"><i class="fa-solid fa-code"></i></div>
+                        <div>
+                            <strong>Priya K.</strong>
+                            <span>Web Developer • IIT Delhi</span>
+                        </div>
+                        <span class="hc-status"><i class="fa-solid fa-circle"></i> Available</span>
+                    </div>
+                    <p>"Built my portfolio site in 3 days — got 2 clients immediately!"</p>
+                    <div class="hc-tags"><span>React</span><span>Node.js</span><span>$25/hr</span></div>
+                </div>
+
+                <div class="glass-card hero-card-2">
+                    <div class="hc-header">
+                        <div class="hc-avatar hc-green"><i class="fa-solid fa-palette"></i></div>
+                        <div>
+                            <strong>Arjun M.</strong>
+                            <span>Graphic Designer • NID</span>
+                        </div>
+                        <span class="hc-status hc-green-dot"><i class="fa-solid fa-circle"></i> Active</span>
+                    </div>
+                    <p>"Earned ₹45,000 last month designing logos for local cafés."</p>
+                    <div class="hc-tags"><span>Illustrator</span><span>Branding</span><span>$18/hr</span></div>
+                </div>
+
+                <div class="glass-card hero-card-3">
+                    <i class="fa-solid fa-bolt"></i>
+                    <strong>Instant Match</strong>
+                    <span>AI pairs you with the perfect student in under 60 seconds.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== STATS ====== -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item reveal">
+                    <div class="stat-icon"><i class="fa-solid fa-users"></i></div>
+                    <div class="stat-number" data-target="25000">0</div>
+                    <div class="stat-label">Students Registered</div>
+                </div>
+                <div class="stat-item reveal">
+                    <div class="stat-icon stat-green"><i class="fa-solid fa-check-circle"></i></div>
+                    <div class="stat-number" data-target="42000">0</div>
+                    <div class="stat-label">Jobs Completed</div>
+                </div>
+                <div class="stat-item reveal">
+                    <div class="stat-icon stat-blue"><i class="fa-solid fa-city"></i></div>
+                    <div class="stat-number" data-target="120">0</div>
+                    <div class="stat-label">Cities Covered</div>
+                </div>
+                <div class="stat-item reveal">
+                    <div class="stat-icon stat-yellow"><i class="fa-solid fa-indian-rupee-sign"></i></div>
+                    <div class="stat-number" data-target="8500000" data-prefix="₹">0</div>
+                    <div class="stat-label">Earnings Generated</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== FEATURES ====== -->
+    <section id="features" class="features section">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="section-tag">Features</span>
+                <h2>Everything you need to <span class="gradient-text">succeed</span></h2>
+                <p>Powerful tools built for students and businesses — simple to use, incredibly effective.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card reveal">
+                    <div class="feature-icon" style="background: linear-gradient(135deg,#2563EB,#3b82f6);"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3>Verified Students</h3>
+                    <p>Every student goes through ID and college verification before joining the platform.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon" style="background: linear-gradient(135deg,#10B981,#34d399);"><i class="fa-solid fa-robot"></i></div>
+                    <h3>AI Matching</h3>
+                    <p>Our smart engine instantly connects you with the best-fit talent for your project.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon" style="background: linear-gradient(135deg,#f59e0b,#fbbf24);"><i class="fa-solid fa-folder-open"></i></div>
+                    <h3>Portfolio Builder</h3>
+                    <p>Showcase your best work with a beautiful, professional portfolio page.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon" style="background: linear-gradient(135deg,#ef4444,#f87171);"><i class="fa-solid fa-lock"></i></div>
+                    <h3>Secure Payments</h3>
+                    <p>Escrow-protected transactions ensure safe and timely payments every time.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon" style="background: linear-gradient(135deg,#8b5cf6,#a78bfa);"><i class="fa-solid fa-star"></i></div>
+                    <h3>Ratings &amp; Reviews</h3>
+                    <p>Transparent feedback systems help build credibility across the community.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon" style="background: linear-gradient(135deg,#ec4899,#f472b6);"><i class="fa-solid fa-comments"></i></div>
+                    <h3>In-App Messaging</h3>
+                    <p>Chat directly, share files, and collaborate without leaving the platform.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon" style="background: linear-gradient(135deg,#06b6d4,#22d3ee);"><i class="fa-solid fa-bell"></i></div>
+                    <h3>Smart Notifications</h3>
+                    <p>Real-time alerts for new jobs, messages, and milestones so you never miss out.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon" style="background: linear-gradient(135deg,#84cc16,#a3e635);"><i class="fa-solid fa-location-dot"></i></div>
+                    <h3>Local Opportunities</h3>
+                    <p>Discover businesses near your campus that are actively hiring student talent.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== CATEGORIES / SERVICES ====== -->
+    <section id="services" class="services section">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="section-tag">Categories</span>
+                <h2>Explore in-demand <span class="gradient-text">services</span></h2>
+                <p>From coding to content — thousands of opportunities across every skill set.</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                    <h3>Web Development</h3>
+                    <p>Websites, web apps, and landing pages built with modern frameworks.</p>
+                    <span class="service-count">1,240+ gigs</span>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon" style="color:#ef4444;"><i class="fa-solid fa-pen-ruler"></i></div>
+                    <h3>Graphic Design</h3>
+                    <p>Logos, branding, posters, UI/UX, and creative visual assets.</p>
+                    <span class="service-count">980+ gigs</span>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon" style="color:#8b5cf6;"><i class="fa-solid fa-video"></i></div>
+                    <h3>Video Editing</h3>
+                    <p>Reels, YouTube videos, event coverage, and motion graphics.</p>
+                    <span class="service-count">760+ gigs</span>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon" style="color:#10B981;"><i class="fa-solid fa-pen-nib"></i></div>
+                    <h3>Content Writing</h3>
+                    <p>Blog posts, copywriting, scripts, SEO content, and newsletters.</p>
+                    <span class="service-count">1,100+ gigs</span>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon" style="color:#f59e0b;"><i class="fa-solid fa-chalkboard-user"></i></div>
+                    <h3>Tutoring</h3>
+                    <p>Academic tutoring, test prep, coding lessons, and skill coaching.</p>
+                    <span class="service-count">620+ gigs</span>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon" style="color:#ec4899;"><i class="fa-solid fa-bullhorn"></i></div>
+                    <h3>Digital Marketing</h3>
+                    <p>Social media, SEO, Google Ads, email campaigns, and analytics.</p>
+                    <span class="service-count">890+ gigs</span>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon" style="color:#06b6d4;"><i class="fa-solid fa-camera"></i></div>
+                    <h3>Photography</h3>
+                    <p>Event photography, product shoots, portraits, and drone coverage.</p>
+                    <span class="service-count">540+ gigs</span>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon" style="color:#84cc16;"><i class="fa-solid fa-champagne-glasses"></i></div>
+                    <h3>Event Assistance</h3>
+                    <p>On-ground event staffing, coordination, and promotion support.</p>
+                    <span class="service-count">430+ gigs</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== HOW IT WORKS ====== -->
+    <section class="how section">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="section-tag">How It Works</span>
+                <h2>From sign-up to <span class="gradient-text">getting paid</span></h2>
+                <p>A simple six-step process designed to get you working and earning fast.</p>
+            </div>
+
+            <div class="steps">
+                <div class="step reveal">
+                    <div class="step-number">01</div>
+                    <div class="step-icon"><i class="fa-solid fa-user-plus"></i></div>
+                    <h3>Register</h3>
+                    <p>Sign up in under 2 minutes using your college email or business details.</p>
+                </div>
+                <div class="step reveal">
+                    <div class="step-number">02</div>
+                    <div class="step-icon" style="background: linear-gradient(135deg,#10B981,#34d399);"><i class="fa-solid fa-id-card"></i></div>
+                    <h3>Create Profile</h3>
+                    <p>Build a standout profile with your skills, portfolio, and rates.</p>
+                </div>
+                <div class="step reveal">
+                    <div class="step-number">03</div>
+                    <div class="step-icon" style="background: linear-gradient(135deg,#f59e0b,#fbbf24);"><i class="fa-solid fa-magnifying-glass"></i></div>
+                    <h3>Post or Find Jobs</h3>
+                    <p>Post opportunities as a business or browse jobs as a student freelancer.</p>
+                </div>
+                <div class="step reveal">
+                    <div class="step-number">04</div>
+                    <div class="step-icon" style="background: linear-gradient(135deg,#8b5cf6,#a78bfa);"><i class="fa-solid fa-handshake"></i></div>
+                    <h3>Connect</h3>
+                    <p>Chat, interview, and agree on scope, timeline, and payment terms.</p>
+                </div>
+                <div class="step reveal">
+                    <div class="step-number">05</div>
+                    <div class="step-icon" style="background: linear-gradient(135deg,#ec4899,#f472b6);"><i class="fa-solid fa-list-check"></i></div>
+                    <h3>Complete Work</h3>
+                    <p>Deliver quality work through our milestone-based tracking system.</p>
+                </div>
+                <div class="step reveal">
+                    <div class="step-number">06</div>
+                    <div class="step-icon" style="background: linear-gradient(135deg,#06b6d4,#22d3ee);"><i class="fa-solid fa-wallet"></i></div>
+                    <h3>Get Paid</h3>
+                    <p>Receive secure payments directly to your bank or UPI within days.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== TESTIMONIALS ====== -->
+    <section id="testimonials" class="testimonials section">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="section-tag">Testimonials</span>
+                <h2>Loved by <span class="gradient-text">students &amp; businesses</span></h2>
+                <p>Real stories from real members of the Anvesa community.</p>
+            </div>
+
+            <div class="testi-grid">
+                <div class="testi-card reveal">
+                    <i class="fa-solid fa-quote-left quote-ic"></i>
+                    <p>"Anvesa helped me land my first paid design gig within a week. The verification process made the business trust me instantly."</p>
+                    <div class="testi-author">
+                        <div class="ta-avatar" style="background: linear-gradient(135deg,#2563EB,#10B981);">AS</div>
+                        <div>
+                            <strong>Ananya Sharma</strong>
+                            <span>Design Student • NIFT Mumbai</span>
+                        </div>
+                        <div class="ta-stars"><i class="fa-solid fa-star"></i>5.0</div>
+                    </div>
+                </div>
+
+                <div class="testi-card reveal">
+                    <i class="fa-solid fa-quote-left quote-ic"></i>
+                    <p>"We hired three developers from Anvesa for our startup MVP. The quality and professionalism matched any senior freelancer we had worked with."</p>
+                    <div class="testi-author">
+                        <div class="ta-avatar" style="background: linear-gradient(135deg,#f59e0b,#ef4444);">RK</div>
+                        <div>
+                            <strong>Rahul Kapoor</strong>
+                            <span>Founder, BrewHouse</span>
+                        </div>
+                        <div class="ta-stars"><i class="fa-solid fa-star"></i>5.0</div>
+                    </div>
+                </div>
+
+                <div class="testi-card reveal">
+                    <i class="fa-solid fa-quote-left quote-ic"></i>
+                    <p>"Tutoring students in my city through Anvesa helped me earn my entire semester's tuition. The platform is intuitive and safe."</p>
+                    <div class="testi-author">
+                        <div class="ta-avatar" style="background: linear-gradient(135deg,#8b5cf6,#ec4899);">DM</div>
+                        <div>
+                            <strong>Debayan Mukherjee</strong>
+                            <span>Tutor • BITS Pilani</span>
+                        </div>
+                        <div class="ta-stars"><i class="fa-solid fa-star"></i>4.9</div>
+                    </div>
+                </div>
+
+                <div class="testi-card reveal">
+                    <i class="fa-solid fa-quote-left quote-ic"></i>
+                    <p>"As a small café owner, I needed affordable marketing help. Anvesa matched me with a marketing student who tripled our Instagram reach."</p>
+                    <div class="testi-author">
+                        <div class="ta-avatar" style="background: linear-gradient(135deg,#10B981,#06b6d4);">SG</div>
+                        <div>
+                            <strong>Sneha Ghosh</strong>
+                            <span>Owner, Bean There Café</span>
+                        </div>
+                        <div class="ta-stars"><i class="fa-solid fa-star"></i>5.0</div>
+                    </div>
+                </div>
+
+                <div class="testi-card reveal">
+                    <i class="fa-solid fa-quote-left quote-ic"></i>
+                    <p>"The portfolio builder on Anvesa is gorgeous. I share my profile link with clients outside the platform now — it's that professional."</p>
+                    <div class="testi-author">
+                        <div class="ta-avatar" style="background: linear-gradient(135deg,#ef4444,#f59e0b);">VT</div>
+                        <div>
+                            <strong>Vikram Tiwari</strong>
+                            <span>Video Editor • FTII Pune</span>
+                        </div>
+                        <div class="ta-stars"><i class="fa-solid fa-star"></i>5.0</div>
+                    </div>
+                </div>
+
+                <div class="testi-card reveal">
+                    <i class="fa-solid fa-quote-left quote-ic"></i>
+                    <p>"We post all our internships on Anvesa now. The AI matching saves us hours of screening and we get incredible talent every time."</p>
+                    <div class="testi-author">
+                        <div class="ta-avatar" style="background: linear-gradient(135deg,#2563EB,#8b5cf6);">MP</div>
+                        <div>
+                            <strong>Meera Pillai</strong>
+                            <span>HR Lead, TechNova</span>
+                        </div>
+                        <div class="ta-stars"><i class="fa-solid fa-star"></i>4.8</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== SUCCESS STORIES ====== -->
+    <section class="stories section">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="section-tag">Success Stories</span>
+                <h2>Where talent meets <span class="gradient-text">opportunity</span></h2>
+            </div>
+            <div class="stories-grid">
+                <div class="story-card reveal">
+                    <div class="story-badge">₹1.2L • Web Dev</div>
+                    <h3>From Classroom to Client-Ready</h3>
+                    <p>Ravi, a 3rd-year CS student, built an e-commerce platform for a local handicraft business — earning enough to fund his final-year project.</p>
+                    <div class="story-meta">
+                        <span><i class="fa-solid fa-graduation-cap"></i> VIT Vellore</span>
+                        <span><i class="fa-solid fa-location-dot"></i> Vellore</span>
+                    </div>
+                </div>
+                <div class="story-card reveal">
+                    <div class="story-badge" style="background: linear-gradient(135deg,#10B981,#34d399);">28 Clients • Design</div>
+                    <h3>Designing Her Way Through College</h3>
+                    <p>Tara designed branding for 28+ local startups, won 'Best Student Designer' at her college, and now runs a small agency of her own.</p>
+                    <div class="story-meta">
+                        <span><i class="fa-solid fa-graduation-cap"></i> NID Ahmedabad</span>
+                        <span><i class="fa-solid fa-location-dot"></i> Ahmedabad</span>
+                    </div>
+                </div>
+                <div class="story-card reveal">
+                    <div class="story-badge" style="background: linear-gradient(135deg,#8b5cf6,#ec4899);">500% ROI • Business</div>
+                    <h3>How a Bakery Doubled in Size</h3>
+                    <p>A student marketing team rebranded and digitized a family bakery, increasing their monthly revenue by 500% in just six months.</p>
+                    <div class="story-meta">
+                        <span><i class="fa-solid fa-store"></i> Flour &amp; Butter</span>
+                        <span><i class="fa-solid fa-location-dot"></i> Bangalore</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== FAQ ====== -->
+    <section id="faq" class="faq section">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="section-tag">FAQ</span>
+                <h2>Frequently asked <span class="gradient-text">questions</span></h2>
+                <p>Everything you need to know about Anvesa.</p>
+            </div>
+
+            <div class="faq-list">
+                <div class="faq-item reveal">
+                    <button class="faq-q">Is Anvesa free for students?<i class="fa-solid fa-chevron-down"></i></button>
+                    <div class="faq-a"><p>Yes! Anvesa is completely free for students to sign up, create a profile, browse jobs, and get hired. We take a small service fee only on completed payments.</p></div>
+                </div>
+                <div class="faq-item reveal">
+                    <button class="faq-q">How does student verification work?<i class="fa-solid fa-chevron-down"></i></button>
+                    <div class="faq-a"><p>We verify every student using their official college email ID plus a valid government-issued photo ID. Verified students get a blue checkmark on their profile.</p></div>
+                </div>
+                <div class="faq-item reveal">
+                    <button class="faq-q">How are payments handled?<i class="fa-solid fa-chevron-down"></i></button>
+                    <div class="faq-a"><p>Businesses deposit payments into our secure escrow account before work begins. Funds are released to students once milestones are approved, ensuring safety for both parties.</p></div>
+                </div>
+                <div class="faq-item reveal">
+                    <button class="faq-q">Can businesses from any city join?<i class="fa-solid fa-chevron-down"></i></button>
+                    <div class="faq-a"><p>Absolutely. We currently operate in 120+ cities across India and are expanding internationally. Any business — small, medium, or enterprise — can post jobs.</p></div>
+                </div>
+                <div class="faq-item reveal">
+                    <button class="faq-q">What types of jobs can be posted?<i class="fa-solid fa-chevron-down"></i></button>
+                    <div class="faq-a"><p>Freelance projects, part-time gigs, internships, one-time tasks, tutoring sessions, event staffing — you name it. If it can be done by a student, it's welcome.</p></div>
+                </div>
+                <div class="faq-item reveal">
+                    <button class="faq-q">How does the AI matching work?<i class="fa-solid fa-chevron-down"></i></button>
+                    <div class="faq-a"><p>Our AI analyzes skills, past work, ratings, location, availability, and budget to match jobs with the top 5 most suitable students within 60 seconds.</p></div>
+                </div>
+                <div class="faq-item reveal">
+                    <button class="faq-q">Is there a mobile app available?<i class="fa-solid fa-chevron-down"></i></button>
+                    <div class="faq-a"><p>Yes! The Anvesa app is available on both iOS and Android. You'll get push notifications for new messages, jobs, and payments.</p></div>
+                </div>
+                <div class="faq-item reveal">
+                    <button class="faq-q">What if there's a dispute?<i class="fa-solid fa-chevron-down"></i></button>
+                    <div class="faq-a"><p>Our dedicated support team mediates every dispute with a fair resolution process. We review messages, deliverables, and contracts to reach a fair outcome.</p></div>
+                </div>
+                <div class="faq-item reveal">
+                    <button class="faq-q">Can I hire multiple students for a project?<i class="fa-solid fa-chevron-down"></i></button>
+                    <div class="faq-a"><p>Yes — many businesses build entire student teams on Anvesa, combining designers, developers, writers, and marketers for larger projects.</p></div>
+                </div>
+                <div class="faq-item reveal">
+                    <button class="faq-q">Do you offer international payments?<i class="fa-solid fa-chevron-down"></i></button>
+                    <div class="faq-a"><p>Yes, we support UPI, bank transfers, and international payments via PayPal and Wise, so students can work with global clients seamlessly.</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== CONTACT ====== -->
+    <section id="contact" class="contact section">
+        <div class="container contact-wrap">
+            <div class="contact-info reveal">
+                <span class="section-tag">Get In Touch</span>
+                <h2>Let's build something <span class="gradient-text">great together</span></h2>
+                <p>Have questions about Anvesa? Interested in a partnership? Drop us a message — our team will get back within 24 hours.</p>
+
+                <div class="contact-list">
+                    <div class="ci-item"><i class="fa-solid fa-envelope"></i><div><strong>Email</strong><span>hello@anvesa.com</span></div></div>
+                    <div class="ci-item"><i class="fa-solid fa-phone"></i><div><strong>Phone</strong><span>+91 98765 43210</span></div></div>
+                    <div class="ci-item"><i class="fa-solid fa-location-dot"></i><div><strong>Office</strong><span>HSR Layout, Bangalore, India</span></div></div>
+                </div>
+            </div>
+
+            <form class="contact-form reveal" id="contactForm" novalidate>
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" id="cName" placeholder="Your full name" required>
+                    <small class="err" id="errName"></small>
+                </div>
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" id="cEmail" placeholder="you@example.com" required>
+                    <small class="err" id="errEmail"></small>
+                </div>
+                <div class="form-group">
+                    <label>Your Message</label>
+                    <textarea id="cMsg" rows="5" placeholder="Tell us how we can help..." required></textarea>
+                    <small class="err" id="errMsg"></small>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">
+                    <i class="fa-solid fa-paper-plane"></i> Send Message
+                </button>
+                <p class="form-success" id="formSuccess"><i class="fa-solid fa-circle-check"></i> Thank you! We'll reply soon.</p>
+            </form>
+        </div>
+    </section>
+
+    <!-- ====== NEWSLETTER ====== -->
+    <section class="newsletter section">
+        <div class="container">
+            <div class="newsletter-card reveal">
+                <div class="news-left">
+                    <h2>Stay ahead of the <span class="gradient-text">curve</span></h2>
+                    <p>Join 30,000+ students and businesses getting weekly insights, new opportunities, and platform updates.</p>
+                </div>
+                <form class="news-form" id="newsForm">
+                    <input type="email" id="newsEmail" placeholder="your@email.com" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+                <p class="news-success" id="newsSuccess"><i class="fa-solid fa-circle-check"></i> Subscribed! Check your inbox.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== FOOTER ====== -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <a href="#home" class="logo logo-dark">
+                    <span class="logo-icon"><i class="fa-solid fa-graduation-cap"></i></span>
+                    <span class="logo-text">Anvesa</span>
+                </a>
+                <p>Campus Talent, Local Impact. Connecting ambitious students with real-world opportunities.</p>
+                <div class="socials">
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" aria-label="Discord"><i class="fa-brands fa-discord"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Platform</h4>
+                <a href="#features">Features</a>
+                <a href="#services">Categories</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#faq">FAQ</a>
+            </div>
+            <div class="footer-col">
+                <h4>Company</h4>
+                <a href="#home">About Us</a>
+                <a href="#">Careers</a>
+                <a href="#">Press</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-col">
+                <h4>Resources</h4>
+                <a href="#">Blog</a>
+                <a href="#">Student Guide</a>
+                <a href="#">Business Guide</a>
+                <a href="#">Help Center</a>
+            </div>
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookie Policy</a>
+                <a href="#">Refund Policy</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>© 2026 Anvesa. All rights reserved. Made with <i class="fa-solid fa-heart"></i> for student talent.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <script src="script.js"></script>
+</body>
+</html>
